@@ -65,15 +65,15 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean isValid() {
         boolean valid = true;
+
         String nama = etNama.getText().toString();
-        if(nama.isEmpty()){
-            etNama.setError("Nama Belum Di isi");
-        valid = false;
-        }
-        else if(nama.length()<3){
-            etNama.setError("Nama minimal 3 karakter");
+        if(nama.isEmpty())
+        {
+            etNama.setError("Nama Belum Diisi");
             valid = false;
         }
+
         return valid;
     }
+
 }
