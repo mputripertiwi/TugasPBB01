@@ -72,6 +72,11 @@ public class MainActivity extends AppCompatActivity {
             etNama.setError("Nama Belum Diisi");
             valid = false;
         }
+        else if(nama.length()<3)
+        {
+            etNama.setError("Nama minimal 3 karakter");
+            valid = false;
+        }
 
         return valid;
     }
